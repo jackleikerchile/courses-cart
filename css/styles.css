@@ -1,0 +1,17 @@
+/* Main Navbar */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-container li:nth-last-child(1) {
+  text-align: right;
+}
+
+ul {
+  padding: 2rem;
+}
+
+li {
+  list-style-type: none;
+}
