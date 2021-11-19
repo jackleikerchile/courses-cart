@@ -32,6 +32,32 @@ li {
   cursor: pointer;
 }
 
+tr {
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 30px 0;
+}
+
+.amount-cart {
+  position: absolute;
+  right: 25px;
+  top: 23px;
+  border-radius: 50%;
+  padding: 0 5px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  background: #ee9ca7;
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); 
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -65,6 +91,83 @@ li {
   font-size: 36px;
   margin-left: 50px;
 }
+
+.cursos {
+background: #C9D6FF;
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  padding: 20px 80px;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+
+.card {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.card .info-card {
+  padding: 15px;
+  margin: 0px;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+#form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  text-align: left;
+  font-size: 20px;
+}
+
+label:hover,
+label:hover ~ label {
+  color: orange;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+button {
+  background-color: #ff000063;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 15px;
+  border: none;
+}
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
